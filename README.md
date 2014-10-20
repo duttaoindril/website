@@ -1,2 +1,4 @@
-TeenHackathon.github.io
-=======================
+Teen Hackathon
+==============
+
+The website for Teen Hackathon
