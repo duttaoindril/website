@@ -144,6 +144,11 @@ p {
 }
 .button:hover h3
 {
+    -webkit-transition: all .25s;
+    -moz-transition: all .25s;
+    -ms-transition: all .25s;
+    -o-transition: all .25s;
+    transition: all .25s;
     color: #16a085;
     text-shadow: 2px 2px 0 #1abc9c;
 }
