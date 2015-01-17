@@ -37,10 +37,10 @@ setInterval(function () {
     $("#secs").text(seconds);
 }, 1000);
 
-$("aboutexpand").hide();
-$("teamexpand").hide();
-$("faqexpand").hide();
-$("educodeexpand").hide();
+$("#aboutexpand").hide();
+$("#teamexpand").hide();
+$("#faqexpand").hide();
+$("#educodeexpand").hide();
 
 function expand(idname) {
     var $div = $("#"+idname);
