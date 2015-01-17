@@ -37,6 +37,18 @@ setInterval(function () {
     $("#secs").text(seconds);
 }, 1000);
 
+function expand(idname) {
+    var $div = $("#"+idname);
+    if ($div.is(":hidden"))
+    {
+        $div.slideDown("slow");
+    }
+    else
+    {
+        $div.slideUp("fast");
+    }
+}
+
 //START AWESOME MAP CODE
 google.maps.event.addDomListener(window, 'load', init);
     var map;
