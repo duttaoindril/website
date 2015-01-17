@@ -18,9 +18,9 @@ $(function () {
     });
 });
 function select (selector) {
-	$("."+selector).addClass("selected").siblings().removeClass("selected");
+    $("."+selector).addClass("selected").siblings().removeClass("selected");
 }
-var target_date = new Date("Mar 14, 2015").getTime();
+var target_date = new Date("Mar 21, 2015").getTime();
 var days, hours, minutes, seconds;
 setInterval(function () {
     var current_date = new Date().getTime();
@@ -42,7 +42,7 @@ google.maps.event.addDomListener(window, 'load', init);
 var map;
 function init() {
     var mapOptions = {
-        center: new google.maps.LatLng(37.3496418,-121.9389875),
+        center: new google.maps.LatLng(37.375467, -121.922283),
         zoom: 17,
         zoomControl: true,
         zoomControlOptions: {
@@ -67,14 +67,14 @@ function init() {
     var mapElement = document.getElementById('map');
     var map = new google.maps.Map(mapElement, mapOptions);
     var locations = [
-['Santa Clara Univers.', '', '', '', '', 37.3496418, -121.9389875, 'https://mapbuildr.com/assets/img/markers/default.png']
+['PayPal Town Hall', '', '', '', 'http://paypal.com', 37.375467, -121.922283, 'https://mapbuildr.com/assets/img/markers/default.png']
     ];
     for (i = 0; i < locations.length; i++) {
         if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
         if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
         if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
-       if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
-       if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
+        if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
+        if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
         marker = new google.maps.Marker({
             icon: markericon,
             position: new google.maps.LatLng(locations[i][5], locations[i][6]),
@@ -88,12 +88,12 @@ function init() {
         bindInfoWindow(marker, map, locations[i][0], description, telephone, email, web);
     }
 function bindInfoWindow(marker, map, title, desc, telephone, email, web) {
-if (web.substring(0, 7) != "http://") {
-link = "http://" + web;
-} else {
-link = web;
-}
-  var infoWindowVisible = (function () {
+    if (web.substring(0, 7) != "http://") {
+        link = "http://" + web;
+    } else {
+        link = web;
+    }
+    var infoWindowVisible = (function () {
           var currentlyVisible = false;
           return function (visible) {
               if (visible !== undefined) {
@@ -122,20 +122,20 @@ link = web;
 //END AWESOME MAP CODE
 
 (function() {
-	try {
-		var $_console$$ = console;
-		Object.defineProperty(window, "console", {
-			get: function() {
-				if ($_console$$._commandLineAPI)
-					throw "Sorry, for security reasons, the script console is deactivated on netflix.com";
-				return $_console$$
-			},
-			set: function($val$$) {
-				$_console$$ = $val$$
-			}
-		})
-	} catch ($ignore$$) {
-	}
+    try {
+        var $_console$$ = console;
+        Object.defineProperty(window, "console", {
+            get: function() {
+                if ($_console$$._commandLineAPI)
+                    throw "Sorry, for security reasons, the script console is deactivated on netflix.com";
+                return $_console$$
+            },
+            set: function($val$$) {
+                $_console$$ = $val$$
+            }
+        })
+    } catch ($ignore$$) {
+    }
 })();
 
 window.onscroll = function () {
