@@ -57,7 +57,13 @@ h5 {
     line-height: 1.2;
     margin: 0;
 }
-h1, h2, h3, h4, h5, h6, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     text-shadow: 2px 2px 0px #333;
 }
 h1 {
@@ -87,7 +93,13 @@ h5 {
     font-size: 1.75em;
     font-family: Klinic Slab, sans-serif;
 }
-#timebar h4, #organizers h4, #codemv h4, #faqboxes h4, #signup h3, footer h4, #about .details h3 {
+#timebar h4,
+#organizers h4,
+#codemv h4,
+#faqboxes h4,
+#signup h3,
+footer h4,
+#about .details h3 {
     font-family: Lobster, cursive;
 }
 small,
@@ -103,10 +115,13 @@ a {
     text-decoration: none;
     text-shadow: 2px 2px 0 #16a085;
 }
+h2 a:hover,
 h3 a:hover,
 h4 a:hover,
+h5 a:hover,
+h6 a:hover,
 p a:hover {
-    color: #16a085;
+    color: #333;
     text-shadow: 2px 2px 0 #1abc9c;
 }
 h1 a {
@@ -124,8 +139,11 @@ p {
     margin: 0;
     font-size: 1.5em;
 }
-.button
-{
+.navimg {
+    -webkit-filter: invert(100%) drop-shadow(3px 3px 0 #333);
+    filter: invert(100%) drop-shadow(3px 3px 0 #333);
+}
+.button {
     -webkit-transition: all .25s;
     transition: all .25s;
     width: 50%;
@@ -142,26 +160,22 @@ p {
     text-decoration: none;
     cursor: pointer;
 }
-.button:hover h3
-{
+.button:hover h3 {
     -webkit-transition: all .25s;
     transition: all .25s;
-    color: #16a085;
+    color: #333;
     text-shadow: 2px 2px 0 #1abc9c;
 }
-.button:hover
-{
+.button:hover {
     -ms-box-shadow: 3px 3px 0px #333;
     -o-box-shadow: 3px 3px 0px #333;
     box-shadow: 3px 3px 0px #333;
 }
-.button:active
-{
+.button:active {
     -ms-box-shadow: 1px 1px 0px #00704c;
     -o-box-shadow: 1px 1px 0px #00704c;
     box-shadow: 1px 1px 0px #00704c;
 }
-
 /********************************************
 Centering Styling
 ********************************************/
@@ -191,7 +205,8 @@ header {
     top: 0;
     position: fixed;
     z-index: 3;
-    background-color: #333; /*#ecf0f1;*/
+    background-color: #333;
+    /*#ecf0f1;*/
     box-shadow: 0px 3px 0px #1abc9c;
 }
 header .link {
@@ -221,8 +236,7 @@ header .link:hover img {
 header .selected div {
     background-color: #fff;
 }
-header .selected .link img
-{
+header .selected .link img {
     -webkit-filter: invert(20%) drop-shadow(2px 2px 0 #1abc9c);
     -moz-filter: invert(20%) drop-shadow(2px 2px 0 #1abc9c);
     -ms-filter: invert(20%) drop-shadow(2px 2px 0 #1abc9c);
@@ -236,6 +250,7 @@ header .selected .link img
     -o-filter: invert(0%) drop-shadow(0px 0px 0 #bdc3c7);
     filter: invert(0%) drop-shadow(0px 0px 0 #bdc3c7);
 }*/
+
 /********************************************
 Sidebar Styling
 ********************************************/
@@ -247,7 +262,8 @@ Sidebar Styling
     margin-left: 10px;
     top: 50%;
     margin-top: -222px;
-    background-color: #333; /*#ecf0f1;*/
+    background-color: #333;
+    /*#ecf0f1;*/
     box-shadow: 3px 3px 0 #16a085;
 }
 #sidebar a {
@@ -285,7 +301,8 @@ Timer Styling
     top: 50%;
     padding: 15px 0;
     margin: -195px 10px 0 0;
-    background-color: #333; /*#ecf0f1;*/
+    background-color: #333;
+    /*#ecf0f1;*/
     box-shadow: 3px 3px 0 #16a085;
 }
 #timebar div {
@@ -315,11 +332,10 @@ Container Styling
     background-repeat: no-repeat;
     background-size: cover;
 }
-.overlay
-{
+.overlay {
     width: 100%;
     height: 100%;
-    background-color: rgba(0,112,76, 0.5);
+    background-color: rgba(0, 112, 76, 0.5);
 }
 .fill {
     width: 100%;
@@ -354,20 +370,17 @@ Container Styling
     background-color: #11c883;
     box-shadow: 3px 3px 0 #16a085;
 }
-.mid
-{
+.mid {
     width: 90%;
     margin: 0 5%;
 }
-.divbreak
-{
+.divbreak {
     width: 100%;
     height: 5px;
     background-color: #7f8c8d;
     box-shadow: 0 2px 0 #333333;
 }
-.footershadow
-{
+.footershadow {
     z-index: 2;
     width: 100%;
     position: relative;
@@ -382,8 +395,7 @@ Container Styling
 SplashScreen Styling
 ********************************************/
 
-.firstbanner
-{
+.firstbanner {
     width: 100%;
     height: 100%;
     background-image: url("../img/banner.jpg");
@@ -526,7 +538,7 @@ About Styling
     float: left;
 }
 #about .schedule .time {
-    color: black;
+    color: white;
 }
 /********************************************
 Organizer Styling
@@ -560,58 +572,76 @@ Organizer Styling
     border-color: #1abc9c;
     background-color: #34495e;
 }
-#organizers #person1:hover img, #organizers #person1:after img {
+#organizers #person1:hover img,
+#organizers #person1:after img {
     content: url("../img/team/Person1-2.png");
 }
-#organizers #person2:hover img, #organizers #person2:after img {
+#organizers #person2:hover img,
+#organizers #person2:after img {
     content: url("../img/team/Person2-2.png");
 }
-#organizers #person3:hover img, #organizers #person3:after img {
+#organizers #person3:hover img,
+#organizers #person3:after img {
     content: url("../img/team/Person3-2.png");
 }
-#organizers #person4:hover img, #organizers #person4:after img {
+#organizers #person4:hover img,
+#organizers #person4:after img {
     content: url("../img/team/Person4-2.png");
 }
-#organizers #person5:hover img, #organizers #person5:after img {
+#organizers #person5:hover img,
+#organizers #person5:after img {
     content: url("../img/team/Person5-2.png");
 }
-#organizers #person6:hover img, #organizers #person6:after img {
+#organizers #person6:hover img,
+#organizers #person6:after img {
     content: url("../img/team/Person6-2.png");
 }
-#organizers #person7:hover img, #organizers #person7:after img {
+#organizers #person7:hover img,
+#organizers #person7:after img {
     content: url("../img/team/Person7-2.png");
 }
-#organizers #person8:hover img, #organizers #person8:after img {
+#organizers #person8:hover img,
+#organizers #person8:after img {
     content: url("../img/team/Person8-2.png");
 }
-#organizers #person9:hover img, #organizers #person9:after img {
+#organizers #person9:hover img,
+#organizers #person9:after img {
     content: url("../img/team/Person9-2.png");
 }
-#organizers #person10:hover img, #organizers #person10:after img {
+#organizers #person10:hover img,
+#organizers #person10:after img {
     content: url("../img/team/Person10-2.png");
 }
-#organizers #person11:hover img, #organizers #person11:after img {
+#organizers #person11:hover img,
+#organizers #person11:after img {
     content: url("../img/team/Person11.png");
 }
-#organizers #person12:hover img, #organizers #person12:after img {
+#organizers #person12:hover img,
+#organizers #person12:after img {
     content: url("../img/team/Person12-2.png");
 }
-#organizers #person13:hover img, #organizers #person13:after img {
+#organizers #person13:hover img,
+#organizers #person13:after img {
     content: url("../img/team/Person13-2.png");
 }
-#organizers #person14:hover img, #organizers #person14:after img {
+#organizers #person14:hover img,
+#organizers #person14:after img {
     content: url("../img/team/person14-2.png");
 }
-#organizers #person15:hover img, #organizers #person15:after img {
+#organizers #person15:hover img,
+#organizers #person15:after img {
     content: url("../img/team/Person15-2.png");
 }
-#organizers #person16:hover img, #organizers #person16:after img {
+#organizers #person16:hover img,
+#organizers #person16:after img {
     content: url("../img/team/Person16-2.png");
 }
-#organizers #person17:hover img, #organizers #person17:after img {
+#organizers #person17:hover img,
+#organizers #person17:after img {
     content: url("../img/team/Person17-2.png");
 }
-#organizers #person18:hover img, #organizers #person18:after img {
+#organizers #person18:hover img,
+#organizers #person18:after img {
     content: url("../img/team/Person18-2.png");
 }
 #organizers p,
@@ -647,19 +677,23 @@ FAQ Styling
     box-shadow: 3px 3px 0px #1abc9c;
 }
 .faqbox:hover {
-    background-color: rgba(255, 255, 255, 1);
+    background-color: #333;
+}
+.faqbox a:hover {
+    color: #11c88e;
+    text-shadow: 2px 2px 0 #1abc9c;
 }
 .faqboxtitle {
     -webkit-transition: all .25s;
     transition: all .25s;
     width: 100%;
     margin-bottom: 5%;
-    background-color: #16a085;
+    background-color: #11c88e;
     padding: 0 25px;
     -ms-box-sizing: border-box;
     -o-box-sizing: border-box;
     box-sizing: border-box;
-    box-shadow: 3px 2.5px 0px #1abc9c;
+    box-shadow: 3px 2.5px 0px #16a085;
 }
 /********************************************
 Sponsors Styling
@@ -682,7 +716,7 @@ Sponsors Styling
     -ms-filter: grayscale(100%);
     filter: grayscale(100%);
 }
-#sponsorgallery img:hover  {
+#sponsorgallery img:hover {
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
     -ms-filter: grayscale(0%);
@@ -734,8 +768,8 @@ form {
 /********************************************
 Footer Styling
 ********************************************/
-footer
-{
+
+footer {
     background-color: #2c3e50;
     position: fixed;
     z-index: 1;
@@ -745,17 +779,15 @@ footer
     color: #ecf0f1;
     text-shadow: 2px 2px 0 #7f8c8d;
 }
-footer a{
+footer a {
     color: #16a085;
     text-shadow: 1px 1px 0 #95a5a6;
 }
-footer a:hover
-{
+footer a:hover {
     color: #2980b9;
     text-shadow: 1px 1px 0 #1abc9c;
 }
-footer #link
-{
+footer #link {
     height: 60px;
     display: block;
 }
@@ -786,11 +818,9 @@ Colors Styling
 }
 */
 
-#special:hover
-{
+#special:hover {
     letter-spacing: 0.02em;
 }
-#special2
-{
+#special2 {
     color: red;
 }
