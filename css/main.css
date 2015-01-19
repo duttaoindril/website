@@ -304,7 +304,7 @@ Timer Styling
     padding: 15px 0;
     margin: -195px 10px 0 0;
     background-color: #333;
-    box-shadow: 3px 3px 0 #2c3e50;
+    box-shadow: 3px 3px 0 #16a085;
 }
 #timebar div {
     width: 80px;
@@ -313,7 +313,7 @@ Timer Styling
 }
 #timebar h3 {
     font-family: Klinic Slab, sans-serif;
-    text-shadow: 2px 2px 0px #16a085;
+    text-shadow: 2px 2px 0px #2c3e50;
 }
 /********************************************
 Container Styling
@@ -378,7 +378,7 @@ Container Styling
 .divbreak {
     width: 100%;
     height: 5px;
-    background-color: #7f8c8d;
+    background-color: #fff;
     box-shadow: 0 2px 0 #333333;
 }
 .footershadow {
