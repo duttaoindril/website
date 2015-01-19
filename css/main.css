@@ -57,6 +57,9 @@ h5 {
     line-height: 1.2;
     margin: 0;
 }
+h1, h2, h3, h4, h5, h6, p {
+    text-shadow: 2px 2px 0px #333;
+}
 h1 {
     -webkit-transition: all .25s;
     transition: all .25s;
@@ -203,27 +206,27 @@ header .link img {
     height: 48px;
     width: 48px;
     margin-top: 0;
-    -webkit-filter: invert(40%) drop-shadow(2px 2px 0 #bdc3c7);
-    -moz-filter: invert(40%) drop-shadow(2px 2px 0 #bdc3c7);
-    -ms-filter: invert(40%) drop-shadow(2px 2px 0 #bdc3c7);
-    filter: invert(40%) drop-shadow(2px 2px 0 #bdc3c7);
+    -webkit-filter: invert(100%) drop-shadow(2px 2px 0 #bdc3c7);
+    -moz-filter: invert(100%) drop-shadow(2px 2px 0 #bdc3c7);
+    -ms-filter: invert(100%) drop-shadow(2px 2px 0 #bdc3c7);
+    filter: invert(100%) drop-shadow(2px 2px 0 #bdc3c7);
 }
 header .link:hover img {
-    margin-top: 4px;
-    -webkit-filter: invert(40%) drop-shadow(2px 2px 0 #1abc9c);
-    -moz-filter: invert(40%) drop-shadow(2px 2px 0 #1abc9c);
-    -ms-filter: invert(40%) drop-shadow(2px 2px 0 #1abc9c);
-    filter: invert(40%) drop-shadow(2px 2px 0 #1abc9c);
+    margin-top: 3px;
+    -webkit-filter: invert(100%) drop-shadow(2px 2px 0 #1abc9c);
+    -moz-filter: invert(100%) drop-shadow(2px 2px 0 #1abc9c);
+    -ms-filter: invert(100%) drop-shadow(2px 2px 0 #1abc9c);
+    filter: invert(100%) drop-shadow(2px 2px 0 #1abc9c);
 }
 header .selected div {
-    background-color: #95a5a6;
+    background-color: #fff;
 }
 header .selected .link img
 {
-    -webkit-filter: invert(10%) drop-shadow(2px 2px 0 #1abc9c);
-    -moz-filter: invert(10%) drop-shadow(2px 2px 0 #1abc9c);
-    -ms-filter: invert(10%) drop-shadow(2px 2px 0 #1abc9c);
-    filter: invert(10%) drop-shadow(2px 2px 0 #1abc9c);
+    -webkit-filter: invert(20%) drop-shadow(2px 2px 0 #1abc9c);
+    -moz-filter: invert(20%) drop-shadow(2px 2px 0 #1abc9c);
+    -ms-filter: invert(20%) drop-shadow(2px 2px 0 #1abc9c);
+    filter: invert(20%) drop-shadow(2px 2px 0 #1abc9c);
 }
 /*header .splashscreen img
 {
@@ -258,17 +261,17 @@ Sidebar Styling
     -webkit-transition: all .25s;
     transition: all .25s;
     margin-left: 0;
-    -webkit-filter: grayscale(100%) drop-shadow(3px 3px 0 #7f8c8d);
+    /*-webkit-filter: grayscale(100%) drop-shadow(3px 3px 0 #7f8c8d);
     -moz-filter: grayscale(100%) drop-shadow(3px 3px 0 #7f8c8d);
     -ms-filter: grayscale(100%) drop-shadow(3px 3px 0 #7f8c8d);
-    filter: grayscale(100%) drop-shadow(3px 3px 0 #7f8c8d);
+    filter: grayscale(100%) drop-shadow(3px 3px 0 #7f8c8d);*/
 }
 #sidebar a:hover img {
     margin-left: 5px;
-    -webkit-filter: grayscale(0%) drop-shadow(3px 3px 0 #bdc3c7);
+    /*-webkit-filter: grayscale(0%) drop-shadow(3px 3px 0 #bdc3c7);
     -moz-filter: grayscale(0%) drop-shadow(3px 3px 0 #bdc3c7);
     -ms-filter: grayscale(0%) drop-shadow(3px 3px 0 #bdc3c7);
-    filter: grayscale(0%) drop-shadow(3px 3px 0 #bdc3c7);
+    filter: grayscale(0%) drop-shadow(3px 3px 0 #bdc3c7);*/
 }
 /********************************************
 Timer Styling
@@ -292,7 +295,7 @@ Timer Styling
 }
 #timebar h3 {
     font-family: Klinic Slab, sans-serif;
-    text-shadow: 3px 3px 0px #1abc9c;
+    text-shadow: 2px 2px 0px #16a085;
 }
 /********************************************
 Container Styling
@@ -370,8 +373,6 @@ Container Styling
     position: relative;
     box-shadow: 0 8px 20px black;
     background-color: white;
-    <!--background-image: url("../img/background.png");
-    background-repeat: repeat;-->
     background-image: url("../img/fixedbackground.png");
     background-repeat: none;
     background-attachment: fixed;
