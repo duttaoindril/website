@@ -54,7 +54,7 @@ google.maps.event.addDomListener(window, 'load', init);
     var map;
     function init() {
         var mapOptions = {
-            center: new google.maps.LatLng(37.375467, -121.922283),
+            center: new google.maps.LatLng(37.375823, -121.922018),
             zoom: 17,
             zoomControl: true,
             zoomControlOptions: {
@@ -79,7 +79,7 @@ google.maps.event.addDomListener(window, 'load', init);
         var mapElement = document.getElementById('map');
         var map = new google.maps.Map(mapElement, mapOptions);
         var locations = [
-['PayPal Town Hall', 'undefined', 'undefined', 'undefined', 'paypal.com', 37.375467,  -121.922283, 'https://mapbuildr.com/assets/img/markers/default.png']
+['PayPal Town Hall', 'undefined', 'undefined', 'undefined', 'paypal.com', 37.375823, -121.922018, 'https://mapbuildr.com/assets/img/markers/default.png']
         ];
         for (i = 0; i < locations.length; i++) {
             if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
