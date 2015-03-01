@@ -663,6 +663,16 @@ Organizer Styling
 #organizers #coder4:after img {
     content: url("../img/team/coder4-2.png");
 }
+#organizers #coder7:hover img,
+#organizers #coder7:after img {
+    content: url("../img/team/coder7-2.png");
+}
+/*
+#organizers #coder8:hover img,
+#organizers #coder8:after img {
+    content: url("../img/team/coder8-2.png");
+}
+*/
 #organizers p,
 #organizers h5 {
     font-size: 1.25em;
