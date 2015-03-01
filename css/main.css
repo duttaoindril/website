@@ -655,6 +655,14 @@ Organizer Styling
 #organizers #person18:after img {
     content: url("../img/team/Person18-2.png");
 }
+#organizers #coder1:hover img,
+#organizers #coder1:after img {
+    content: url("../img/team/coder1-2.png");
+}
+#organizers #coder4:hover img,
+#organizers #coder4:after img {
+    content: url("../img/team/coder4-2.png");
+}
 #organizers p,
 #organizers h5 {
     font-size: 1.25em;
