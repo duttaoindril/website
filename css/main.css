@@ -677,6 +677,31 @@ Organizer Styling
 #organizers h5 {
     font-size: 1.25em;
 }
+#organizers form {
+    -webkit-transition: all .25s;
+    transition: all .25s;
+    display: block;
+    width: 90%;
+    max-width: 600px;
+    margin: 2px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.45);
+    -ms-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+    box-shadow: 3px 3px 0px #1abc9c;
+}
+#organizers form input, #organizers form textarea {
+    font-family: Sintony, sans-serif;
+    margin: 0;
+    font-size: 1.25em;
+    color: white;
+    width: 80%;
+    margin: 10px auto;
+    padding: 5px;
+    border: 2px solid #1abc9c;
+    background-color: #333;
+}
 /********************************************
 FAQ Styling
 ********************************************/
