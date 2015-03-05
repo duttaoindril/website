@@ -623,6 +623,9 @@ Organizer Styling
 #organizers #person10:after img {
     content: url("../img/team/Person10-2.png");
 }
+#organizers #person10:hover h5 {
+    content: "Swag VP";
+}
 #organizers #person11:hover img,
 #organizers #person11:after img {
     content: url("../img/team/Person11.png");
