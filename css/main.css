@@ -765,7 +765,7 @@ Sponsors Styling
 #sponsorgallery img {
     margin: 1%;
     display: inline-block;
-    width: 23%;
+    width: 39%;
     -webkit-transition: all .25s;
     transition: all .25s;
     -webkit-filter: grayscale(100%);
