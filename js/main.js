@@ -20,7 +20,7 @@ $(function () {
 function select (selector) {
     $("."+selector).addClass("selected").siblings().removeClass("selected");
 }
-var target_date = new Date("Mar 21, 2015").getTime();
+var target_date = new Date("Mar 22, 2015").getTime();
 var days, hours, minutes, seconds;
 setInterval(function () {
     var current_date = new Date().getTime();
